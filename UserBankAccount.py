@@ -12,7 +12,7 @@ class BankAccount:
         print(f"My account balance is: {self.account}")
         return self
 
-class User:
+class User1:
     def __init__(self, username, email_address):
         self.name = username
         self.email = email_address
