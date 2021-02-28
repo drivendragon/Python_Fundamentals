@@ -1,26 +1,23 @@
 #Biggie Size - Given a list, write a function that changes all positive numbers in the list to "big".
 #Example: biggie_size([-1, 3, 5, -5]) returns that same list, but whose values are now [-1, "big", "big", -5]
-array = [-1,3,5,-5]
-def biggieSize(array):
-    for i in range(len(array)):
-        if array[i]>0:
-            array[i]='big'
-        return array
-        print array
-print(biggieSize(array))
+def changeToBig(myList):
+    for i in range(len(myList)):
+        if myList[i] > 0:
+            myList[i]=("big")
+    return myList
+
+print(changeToBig([-1,3,5,-5]))
 
 
-#Count Positives - Given a list of numbers, create a function to replace the last value with the number of positive values. (Note that zero is not considered to be a positive number).
-#Example: count_positives([-1,1,1,1]) changes the original list to [-1,1,1,3] and returns it
-#Example: count_positives([1,6,-4,-2,-7,-2]) changes the list to [1,6,-4,-2,-7,2] and returns it
-# list of numbers 
-list1 = [10, -21, 4, -45, 66, -93, 1] 
-pos_count = 0
-for num in list1:
-    if num >= 0: 
-        pos_count += 1
-newList = list1.append(pos_count)
-print(newList)
+
+
+
+
+
+
+
+
+
           
 #Sum Total - Create a function that takes a list and returns the sum of all the values in the array.
 #Example: sum_total([1,2,3,4]) should return 10
